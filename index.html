@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biotecnologia Vermelha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: #f9f9f9;
+      --text: #333;
+      --primary: #8B0000;
+      --secondary: #a52a2a;
+    }
+    [data-theme="dark"] {
+      --background: #121212;
+      --text: #f9f9f9;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-family: 'Merriweather', serif;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-family: 'Merriweather', serif;
+      color: var(--primary);
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .quiz button, .base, .verificar-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .feedback {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    .progress {
+      height: 20px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+    .progress-bar {
+      height: 100%;
+      background: var(--primary);
+      width: 0;
+      transition: width 0.3s;
+    }
+    #topo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Biotecnologia Vermelha</h1>
+  <nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#exemplos">Exemplos</a>
+    <a href="#tecnicas">Técnicas</a>
+    <a href="#importancia">Importância</a>
+    <a href="#etica">Ética</a>
+    <a href="#riscos">Riscos</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#experimento">Experimento</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<section id="introducao">
+  <h2>Introdução</h2>
+  <p>A Biotecnologia Vermelha é a área da biotecnologia voltada para a saúde humana. Ela envolve o uso de organismos vivos e sistemas biológicos para desenvolver produtos e técnicas médicas como medicamentos, vacinas, terapias e diagnósticos.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DNA_chemical_structure.svg/640px-DNA_chemical_structure.svg.png" alt="DNA">
+</section>
+
+<section id="caracteristicas">
+  <h2>Características</h2>
+  <ul>
+    <li>Foco em saúde humana e medicina.</li>
+    <li>Uso de técnicas como engenharia genética e cultura celular.</li>
+    <li>Objetivo de curar, prevenir e diagnosticar doenças.</li>
+  </ul>
+</section>
+
+<section id="exemplos">
+  <h2>Exemplos</h2>
+  <ul>
+    <li>Produção de insulina sintética com bactérias.</li>
+    <li>Vacinas modernas (como as de RNA).</li>
+    <li>Terapias gênicas e células-tronco.</li>
+    <li>Diagnóstico molecular como PCR.</li>
+  </ul>
+</section>
+
+<section id="tecnicas">
+  <h2>Técnicas Utilizadas</h2>
+  <ul>
+    <li>Engenharia genética.</li>
+    <li>Clonagem terapêutica.</li>
+    <li>Uso de vetores virais.</li>
+    <li>CRISPR-Cas9.</li>
+  </ul>
+</section>
+
+<section id="importancia">
+  <h2>Importância</h2>
+  <p>Essa área é vital para o avanço da medicina moderna, possibilitando tratamentos personalizados, prevenção de doenças genéticas e melhoria da qualidade de vida.</p>
+</section>
+
+<section id="etica">
+  <h2>Aspectos Éticos</h2>
+  <ul>
+    <li>Manipulação de genes em humanos.</li>
+    <li>Privacidade de dados genéticos.</li>
+    <li>Acesso desigual às tecnologias.</li>
+  </ul>
+</section>
+
+<section id="riscos">
+  <h2>Riscos</h2>
+  <ul>
+    <li>Consequências imprevisíveis de terapias novas.</li>
+    <li>Possíveis efeitos colaterais.</li>
+    <li>Riscos de uso indevido (bioterrorismo).</li>
+  </ul>
+</section>
+
+<section id="curiosidades">
+  <h2>Curiosidades</h2>
+  <ul>
+    <li>A cor vermelha representa o sangue, saúde e medicina.</li>
+    <li>Em 1982 foi produzida a primeira insulina recombinante.</li>
+    <li>CRISPR veio da imunidade de bactérias.</li>
+  </ul>
+</section>
+
+<section id="experimento">
+  <h2>Experimento Interativo: Montagem de DNA</h2>
+  <p>Clique nas bases para montá-las na sequência correta do DNA:</p>
+
+  <div id="bases" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+    <button class="base">A</button>
+    <button class="base">T</button>
+    <button class="base">C</button>
+    <button class="base">G</button>
+    <button class="base">A</button>
+    <button class="base">G</button>
+    <button class="base">T</button>
+    <button class="base">C</button>
+  </div>
+
+  <div id="target-area" style="display:flex;flex-wrap:wrap;gap:10px;min-height:50px;border:2px dashed var(--primary);padding:10px;border-radius:8px;">
+    <p style="width:100%;text-align:center;color:#888;" id="msg">Clique nas bases acima para montá-las aqui</p>
+  </div>
+
+  <button class="verificar-btn" onclick="verificarDNA()">Verificar Montagem</button>
+  <div id="resultadoDNA" style="margin-top:10px;font-weight:bold;"></div>
+</section>
+<section id="quiz">
+  <h2>Quiz Interativo</h2>
+  <p>Teste seus conhecimentos:</p>
+  <div class="quiz">
+    <div class="question">
+      <p>1. A Biotecnologia Vermelha está relacionada a:</p>
+      <button onclick="responder(this, true)">Saúde e medicina</button>
+      <button onclick="responder(this, false)">Agricultura</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>2. Qual foi o primeiro medicamento biotecnológico?</p>
+      <button onclick="responder(this, true)">Insulina recombinante</button>
+      <button onclick="responder(this, false)">Aspirina</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>3. Técnica usada para editar genes:</p>
+      <button onclick="responder(this, true)">CRISPR-Cas9</button>
+      <button onclick="responder(this, false)">PCR</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>4. A biotecnologia vermelha NÃO é usada para:</p>
+      <button onclick="responder(this, false)">Tratamento de doenças</button>
+      <button onclick="responder(this, true)">Produção de combustíveis</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>5. A terapia gênica serve para:</p>
+      <button onclick="responder(this, true)">Corrigir genes defeituosos</button>
+      <button onclick="responder(this, false)">Criar fertilizantes</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>6. O que é PCR?</p>
+      <button onclick="responder(this, true)">Técnica de amplificação de DNA</button>
+      <button onclick="responder(this, false)">Tratamento com células-tronco</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>7. O que representa a cor vermelha na biotecnologia?</p>
+      <button onclick="responder(this, true)">Saúde e medicina</button>
+      <button onclick="responder(this, false)">Agricultura e meio ambiente</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>8. As vacinas de RNA foram usadas contra:</p>
+      <button onclick="responder(this, true)">COVID-19</button>
+      <button onclick="responder(this, false)">Gripe espanhola</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>9. Uma preocupação ética da biotecnologia é:</p>
+      <button onclick="responder(this, true)">Privacidade genética</button>
+      <button onclick="responder(this, false)">Tamanho dos genes</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>10. O objetivo principal da biotecnologia vermelha é:</p>
+      <button onclick="responder(this, true)">Melhorar a saúde humana</button>
+      <button onclick="responder(this, false)">Aumentar a produção agrícola</button>
+      <div class="feedback"></div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+  <div class="score" id="score"></div>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Biotecnologia Vermelha | Projeto Escolar</p>
+</footer>
+
+<button id="topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
+
+<script>
+  // Modo noturno automático
+  const hora = new Date().getHours();
+  if (hora >= 18 || hora <= 6) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  // Montagem de DNA
+  const bases = document.querySelectorAll('.base');
+  const targetArea = document.getElementById('target-area');
+  const msg = document.getElementById('msg');
+  bases.forEach(base => {
+    base.addEventListener('click', () => {
+      if (msg) msg.style.display = 'none';
+      const newBase = document.createElement('span');
+      newBase.textContent = base.textContent;
+      newBase.className = 'base';
+      newBase.style.cursor = 'default';
+      targetArea.appendChild(newBase);
+    });
+  });
+
+  function verificarDNA() {
+    const sequencia = Array.from(targetArea.querySelectorAll('.base')).map(b => b.textContent);
+    const paresCorretos = ['T','A','G','C','T','C','A','G'];
+    const resultado = document.getElementById('resultadoDNA');
+    if (sequencia.length !== paresCorretos.length) {
+      resultado.textContent = '⚠️ Montagem incompleta.';
+      resultado.style.color = 'orange';
+      return;
+    }
+    const certo = sequencia.every((b, i) => b === paresCorretos[i]);
+    resultado.textContent = certo ? '✅ Montagem correta!' : '❌ Montagem incorreta. Tente novamente.';
+    resultado.style.color = certo ? 'green' : 'red';
+  }
+
+  // Quiz
+  let score = 0;
+  let answered = 0;
+  const totalQuestions = 10;
+
+  function responder(button, correto) {
+    const feedback = button.parentElement.querySelector('.feedback');
+    if (feedback.textContent) return;
+
+    if (correto) {
+      feedback.textContent = '✅ Correto!';
+      feedback.style.color = 'green';
+      score++;
+    } else {
+      feedback.textContent = '❌ Incorreto!';
+      feedback.style.color = 'red';
+    }
+
+    answered++;
+    atualizarProgresso();
+
+    if (answered === totalQuestions) {
+      document.getElementById('score').innerHTML = `<strong>Você acertou ${score} de ${totalQuestions} perguntas.</strong>`;
+    }
+  }
+
+  function atualizarProgresso() {
+    const progress = document.getElementById('progress-bar');
+    progress.style.width = (answered / totalQuestions * 100) + '%';
+  }
+</script>
+
+</body>
+        </html>
